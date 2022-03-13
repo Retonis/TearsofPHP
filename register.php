@@ -11,22 +11,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- Форма авторизации -->
-<form action="" method="">
+<!-- Форма регистрации -->
+<form action="vendor/signup.php" method="post" enctype="multipart/form-data">
     <label>ФИО</label>
-    <input type="text" placeholder="Введите свое полное имя">
+    <input type="text" name="full_name" placeholder="Введите свое полное имя">
     <label>Логин</label>
-    <input type="text" placeholder="Введите свой логин">
+    <input type="text" name="login" placeholder="Введите свой логин">
     <label>Почта</label>
-    <input type="email" placeholder="Введите адрес своей почты">
+    <input type="email" name="email" placeholder="Введите адрес своей почты">
     <label>Пароль</label>
-    <input type="password" placeholder="Введите пароль">
+    <input type="password" name="password" placeholder="Введите пароль">
     <label>Подтвержение пароля</label>
-    <input type="password" placeholder="Подтвердите пароль">
+    <input type="password" name="password_confirm" placeholder="Подтвердите пароль">
     <button>Войти</button>
 <p>
         У вас уже есть аккаунт? - <a href="/index.php">Авторизируйтесь</a>
 </p>
+    <p class="msg"
+       попочка
+    </p>
 </form>
 </body>
 </html>
