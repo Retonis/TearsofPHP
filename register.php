@@ -32,13 +32,12 @@ session_start();
         У вас уже есть аккаунт? - <a href="/index.php">Авторизируйтесь</a>
 </p>
     <?php
-    if ($_SESSION['message']) {
+    if ($_SESSION['message']);
+    {
         echo '<p class="msg">' . $_SESSION['message'] . '</p>';
     }
     unset($_SESSION['message']);
     ?>
-    <p class="msg">
-    </p>
 </form>
 </body>
 </html>
