@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- Форма авторизации -->
-<a action="" method="">
+<form action="" method="">
     <label>ФИО</label>
     <input type="text" placeholder="Введите свое полное имя">
     <label>Логин</label>
@@ -22,7 +22,7 @@
     <label>Пароль</label>
     <input type="password" placeholder="Введите пароль">
     <label>Подтвержение пароля</label>
-    <input type="password" placeholder="Подтвердите пароль>
+    <input type="password" placeholder="Подтвердите пароль">
     <button>Войти</button>
 <p>
         У вас уже есть аккаунт? - <a href="/index.php">Авторизируйтесь</a>
