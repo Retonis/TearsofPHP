@@ -1,5 +1,9 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
@@ -27,8 +31,13 @@
 <p>
         У вас уже есть аккаунт? - <a href="/index.php">Авторизируйтесь</a>
 </p>
-    <p class="msg"
-       попочка
+    <?php
+    if ($_SESSION['message']) {
+        echo '<p class="msg">' . $_SESSION['message'] . '</p>';
+    }
+    unset($_SESSION['message']);
+    ?>
+    <p class="msg">
     </p>
 </form>
 </body>

@@ -44,7 +44,7 @@ p {
 }
 
 .msg {
-    border: 2px solid color(red);
+    border: 2px solid rgba(255, 0, 0, 1);
     border-radius: 3px;
     padding: 10px;
     text-align: center;
