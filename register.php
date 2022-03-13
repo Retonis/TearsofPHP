@@ -12,15 +12,21 @@
 </head>
 <body>
 <!-- Форма авторизации -->
-<form action="" method="">
+<a action="" method="">
+    <label>ФИО</label>
+    <input type="text" placeholder="Введите свое полное имя">
     <label>Логин</label>
     <input type="text" placeholder="Введите свой логин">
+    <label>Почта</label>
+    <input type="email" placeholder="Введите адрес своей почты">
     <label>Пароль</label>
     <input type="password" placeholder="Введите пароль">
+    <label>Подтвержение пароля</label>
+    <input type="password" placeholder="Подтвердите пароль>
     <button>Войти</button>
-    <p>
-        У вас нет аккаунта? - <a href="/register.php">Зарегистрируйтесь</a>
-    </p>
+<p>
+        У вас уже есть аккаунт? - <a href="/index.php">Авторизируйтесь</a>
+</p>
 </form>
 </body>
 </html>
