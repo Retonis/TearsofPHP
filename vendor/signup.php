@@ -15,4 +15,4 @@ $password_confirm = $_POST['password_confirm'];
         $_SESSION['message'] = 'Пароли не совпадают';
         header('Location: ../register.php');
     }
-    ?>
+?>
