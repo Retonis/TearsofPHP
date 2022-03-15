@@ -1,7 +1,7 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -51,3 +51,21 @@ p {
     text-align: center;
     font-weight: bold;
 }
+
+td {
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+    background: cornsilk;
+}
+
+td {
+    background: darkgray;
+}
+
+div {
+    margin-left: 200px;
+}
+
