@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/connect.php';
+require_once 'auth/connect.php';
 
 $id= $_POST['id'];
 $id_category = $_POST['id_category'];

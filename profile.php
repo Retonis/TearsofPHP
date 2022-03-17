@@ -1,5 +1,5 @@
 <?php
-require 'vendor/connect.php';
+require 'auth/connect.php';
 session_start();
 if (!$_SESSION['user']) {
     header('Location: /');
@@ -10,8 +10,8 @@ if (!$_SESSION['user']) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Авторизация и регистрация</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <title>Интернет магазин</title>
 </head>
 <body>
 <!-- Профиль -->
@@ -19,7 +19,7 @@ if (!$_SESSION['user']) {
 <form>
     <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
     <a href="#"><?= $_SESSION['user']['email'] ?></a>
-    <a href="vendor/logout.php" class="logout">Выход</a>
+    <a href="auth/logout.php" class="logout">Выход</a>
 </form>
 
 <table>
@@ -42,7 +42,7 @@ if (!$_SESSION['user']) {
         <td><?= $items[2] ?></td>
         <td><?= $items[3] ?></td>
         <td><?= $items[4] ?></td>
-        <td><a style="color: red;" href="delete.php?id=<?= $items[0] ?>">Удалить</a></td></tr>
+        <td><a  style="color: red; "href="delete.php?id=<?= $items[0] ?>">Удалить</a></td></tr>
 </table>
 <div>Добавить <br>наименование</br></div>
 <form action="create.php" method="post">

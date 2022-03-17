@@ -18,7 +18,7 @@ if ($_SESSION['user']) {
 
 <!-- Форма регистрации -->
 
-<form action="vendor/signup.php" method="post" enctype="multipart/form-data">
+<form action="auth/signup.php" method="post" enctype="multipart/form-data">
     <label>ФИО</label>
     <input type="text" name="full_name" placeholder="Введите свое полное имя">
     <label>Логин</label>
